@@ -36,3 +36,4 @@ with open('numbers.txt', 'r') as input_file:
 with open("even.txt", "r") as even_file, open("odd.txt", "r") as odd_file:
     even_count = len(even_file.readlines())
     odd_count = len(odd_file.readlines())
+    print("\033[92mHi " + user_name + " as you can see, there are " + str(even_count) + " even numbers and " + str(odd_count) + " odd numbers.")

@@ -13,3 +13,6 @@ print(" \033[93mHello! I hope you're having a great day!!! ".center(70, "="))
 # Ask for the name of the user
 user_name = input("\033[95mMay I know your name? \033[0m")
 print("\033[93mThank you", user_name,  "you may now proceed to the program!")
+
+# Open the numbers.txt and read the file
+with open('numbers.txt', 'r') as input_file:

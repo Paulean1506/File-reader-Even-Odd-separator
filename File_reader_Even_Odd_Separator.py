@@ -19,3 +19,7 @@ with open('numbers.txt', 'r') as input_file:
 
     # Open two empty text files; even.txt and odd.txt
     with open('even.txt', 'w') as even_file, open('odd.txt', 'w') as odd_file:
+        # Iterate over each line of the input file
+        for line in input_file:
+            # Convert the line to an integer
+            num = int(line.strip())

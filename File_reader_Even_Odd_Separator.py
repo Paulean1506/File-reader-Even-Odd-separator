@@ -33,6 +33,6 @@ with open('numbers.txt', 'r') as input_file:
                 odd_file.write(str(num) + '\n')
 
 # Printing the numbers of both even and odd
-with open("even_file.txt", "r") as even_file, open("odd_file.txt", "r") as odd_file:
+with open("even.txt", "r") as even_file, open("odd.txt", "r") as odd_file:
     even_count = len(even_file.readlines())
     odd_count = len(odd_file.readlines())

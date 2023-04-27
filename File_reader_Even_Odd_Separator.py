@@ -9,10 +9,12 @@
 import pyfiglet
 
 print(" \033[93mHello! I hope you're having a great day!!! ".center(70, "="))
+print("")
 
 # Ask for the name of the user
 user_name = input("\033[92mMay I know your name? \033[0m")
-print("\033[93mThank you", user_name,  "you may now proceed to the program!")
+print("\n\033[93mThank you", user_name,  "you may now proceed to the program!")
+print("")
 
 # Open the numbers.txt and read the file
 with open('numbers.txt', 'r') as input_file:
@@ -46,5 +48,5 @@ print(des)
 # Program is completed
 from termcolor import colored
 from pyfiglet import Figlet
-f = Figlet(font = "isometric2")
+f = Figlet(font = "banner3-d")
 print(colored(f.renderText('Thank you!'), 'yellow'))

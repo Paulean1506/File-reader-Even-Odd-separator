@@ -42,3 +42,9 @@ with open("even.txt", "r") as even_file, open("odd.txt", "r") as odd_file:
 # Inform user on where to find the list of even and odd numbers
 des = pyfiglet.figlet_format("Open the even and odd .txt file to see the list of even and odd numbers", font = "digital")
 print(des)
+
+# Program is completed
+from termcolor import colored
+from pyfiglet import Figlet
+f = Figlet(font = "isometric2")
+print(colored(f.renderText('Thank you!'), 'yellow'))

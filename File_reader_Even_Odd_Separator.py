@@ -23,3 +23,7 @@ with open('numbers.txt', 'r') as input_file:
         for line in input_file:
             # Convert the line to an integer
             num = int(line.strip())
+
+            # Check if the number is even, then write the number in the even.txt file
+            if num % 2 == 0:
+                even_file.write(str(num) + '\n')

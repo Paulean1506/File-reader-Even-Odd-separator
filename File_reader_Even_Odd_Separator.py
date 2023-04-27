@@ -27,3 +27,7 @@ with open('numbers.txt', 'r') as input_file:
             # Check if the number is even, then write the number in the even.txt file
             if num % 2 == 0:
                 even_file.write(str(num) + '\n')
+
+            # Else, write the number in the odd.txt file
+            else:
+                odd_file.write(str(num) + '\n')

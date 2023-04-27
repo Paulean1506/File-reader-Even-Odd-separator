@@ -11,7 +11,7 @@ import pyfiglet
 print(" \033[93mHello! I hope you're having a great day!!! ".center(70, "="))
 
 # Ask for the name of the user
-user_name = input("\033[95mMay I know your name? \033[0m")
+user_name = input("\033[92mMay I know your name? \033[0m")
 print("\033[93mThank you", user_name,  "you may now proceed to the program!")
 
 # Open the numbers.txt and read the file
@@ -36,4 +36,9 @@ with open('numbers.txt', 'r') as input_file:
 with open("even.txt", "r") as even_file, open("odd.txt", "r") as odd_file:
     even_count = len(even_file.readlines())
     odd_count = len(odd_file.readlines())
-    print("\033[92mHi " + user_name + " as you can see, there are " + str(even_count) + " even numbers and " + str(odd_count) + " odd numbers.")
+    print("\033[95mHi " + user_name + " as you can see, there are " + str(even_count) + " even numbers and " + str(odd_count) + " odd numbers.")
+    print("")
+
+# Inform user on where to find the list of even and odd numbers
+des = pyfiglet.figlet_format("Open the even and odd .txt file to see the list of even and odd numbers", font = "digital")
+print(des)
